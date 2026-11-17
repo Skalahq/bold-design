@@ -8,8 +8,6 @@ Bold Design primitives as a git-only shadcn registry. Vendored via the shadcn CL
 bunx shadcn@latest add skalahq/bold-design/button
 # pin the branch:
 bunx shadcn@latest add skalahq/bold-design/button#main
-# everything:
-bunx shadcn@latest add skalahq/bold-design
 ```
 
 ## Theming (required)
