@@ -528,7 +528,7 @@
     {
       "name": "field-styles",
       "type": "registry:ui",
-      "title": "field-styles",
+      "title": "Field Styles",
       "description": "Shared Tailwind class sets for input-like primitives (Field, Input, SearchInput, Textarea). Required by them.",
       "files": [
         {
@@ -545,7 +545,7 @@
     {
       "name": "multi-input",
       "type": "registry:ui",
-      "title": "multi-input",
+      "title": "Multi Input",
       "description": "Space-separated word slots with paste spreading, per-slot navigation and cancelable changes. Ships multi-input.ts (the ui-sdk view) and MultiInput.tsx (the React wrapper) as one unit.",
       "files": [
         {
@@ -569,7 +569,7 @@
     {
       "name": "theme",
       "type": "registry:file",
-      "title": "theme",
+      "title": "Theme",
       "description": "Tailwind v4 tokens + --ui-* bridge consumed by every primitive. Import AFTER @import \"tailwindcss\";.",
       "files": [
         {

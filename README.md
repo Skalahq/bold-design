@@ -8,7 +8,20 @@ Bold Design primitives as a git-only shadcn registry. Vendored via the shadcn CL
 bunx shadcn@latest add skalahq/bold-design/button
 # pin the branch:
 bunx shadcn@latest add skalahq/bold-design/button#main
+# preview before writing:
+bunx shadcn@latest add skalahq/bold-design/button --dry-run
 ```
+
+Inspect the registry:
+
+```sh
+bunx shadcn@latest list skalahq/bold-design
+bunx shadcn@latest search skalahq/bold-design -q input
+bunx shadcn@latest view skalahq/bold-design/multi-input
+bunx shadcn@latest registry validate skalahq/bold-design
+```
+
+Every item must be named — the bare `skalahq/bold-design` address is not an install form.
 
 ## Theming (required)
 

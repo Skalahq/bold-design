@@ -78,14 +78,16 @@ const registry: Registry = {
     ...componentItems.map((stem) => ({
       name: kebab(stem),
       type: "registry:ui" as const,
-      title: stem,
+      title: stem.includes("-")
+        ? stem.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" ")
+        : stem[0].toUpperCase() + stem.slice(1),
       ...(descriptions[kebab(stem)] ? { description: descriptions[kebab(stem)] } : {}),
       files: filesFor(stem),
     })),
     {
       name: "theme",
       type: "registry:file" as const,
-      title: "theme",
+      title: "Theme",
       description:
         "Tailwind v4 tokens + --ui-* bridge consumed by every primitive. Import AFTER @import \"tailwindcss\";.",
       files: [
