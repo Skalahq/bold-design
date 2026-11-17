@@ -1,0 +1,585 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "bold",
+  "homepage": "https://github.com/skalahq/bold-design",
+  "items": [
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "files": [
+        {
+          "path": "packages/ui/src/Avatar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Avatar.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "bar",
+      "type": "registry:ui",
+      "title": "Bar",
+      "files": [
+        {
+          "path": "packages/ui/src/Bar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Bar.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "brand",
+      "type": "registry:ui",
+      "title": "Brand",
+      "files": [
+        {
+          "path": "packages/ui/src/Brand.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Brand.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "files": [
+        {
+          "path": "packages/ui/src/Button.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Button.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "check-box",
+      "type": "registry:ui",
+      "title": "CheckBox",
+      "files": [
+        {
+          "path": "packages/ui/src/CheckBox.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/CheckBox.tsx"
+        }
+      ],
+      "dependencies": [
+        "@ui-sdk/react",
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "display",
+      "type": "registry:ui",
+      "title": "Display",
+      "files": [
+        {
+          "path": "packages/ui/src/Display.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Display.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "DropdownMenu",
+      "files": [
+        {
+          "path": "packages/ui/src/DropdownMenu.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/DropdownMenu.tsx"
+        }
+      ],
+      "dependencies": [
+        "@ui-sdk/react",
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "title": "Field",
+      "files": [
+        {
+          "path": "packages/ui/src/Field.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Field.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "frame",
+      "type": "registry:ui",
+      "title": "Frame",
+      "files": [
+        {
+          "path": "packages/ui/src/Frame.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Frame.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "files": [
+        {
+          "path": "packages/ui/src/Input.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Input.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "skalahq/bold-design/field-styles"
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "files": [
+        {
+          "path": "packages/ui/src/Label.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Label.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "lede",
+      "type": "registry:ui",
+      "title": "Lede",
+      "files": [
+        {
+          "path": "packages/ui/src/Lede.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Lede.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "mark",
+      "type": "registry:ui",
+      "title": "Mark",
+      "files": [
+        {
+          "path": "packages/ui/src/Mark.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Mark.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "menu-toggle",
+      "type": "registry:ui",
+      "title": "MenuToggle",
+      "files": [
+        {
+          "path": "packages/ui/src/MenuToggle.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/MenuToggle.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "skalahq/bold-design/button"
+      ]
+    },
+    {
+      "name": "nav",
+      "type": "registry:ui",
+      "title": "Nav",
+      "files": [
+        {
+          "path": "packages/ui/src/Nav.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Nav.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "nav-item",
+      "type": "registry:ui",
+      "title": "NavItem",
+      "files": [
+        {
+          "path": "packages/ui/src/NavItem.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/NavItem.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "note",
+      "type": "registry:ui",
+      "title": "Note",
+      "files": [
+        {
+          "path": "packages/ui/src/Note.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Note.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "page",
+      "type": "registry:ui",
+      "title": "Page",
+      "files": [
+        {
+          "path": "packages/ui/src/Page.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Page.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "phrase",
+      "type": "registry:ui",
+      "title": "Phrase",
+      "description": "A three-column definition row: term, mark, description — used for glossary-style listings.",
+      "files": [
+        {
+          "path": "packages/ui/src/Phrase.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Phrase.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "phrase-item",
+      "type": "registry:ui",
+      "title": "PhraseItem",
+      "files": [
+        {
+          "path": "packages/ui/src/PhraseItem.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/PhraseItem.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "row",
+      "type": "registry:ui",
+      "title": "Row",
+      "files": [
+        {
+          "path": "packages/ui/src/Row.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Row.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "row-actions",
+      "type": "registry:ui",
+      "title": "RowActions",
+      "files": [
+        {
+          "path": "packages/ui/src/RowActions.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/RowActions.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "search-input",
+      "type": "registry:ui",
+      "title": "SearchInput",
+      "files": [
+        {
+          "path": "packages/ui/src/SearchInput.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/SearchInput.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "skalahq/bold-design/field-styles"
+      ]
+    },
+    {
+      "name": "segment",
+      "type": "registry:ui",
+      "title": "Segment",
+      "files": [
+        {
+          "path": "packages/ui/src/Segment.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Segment.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "segments",
+      "type": "registry:ui",
+      "title": "Segments",
+      "files": [
+        {
+          "path": "packages/ui/src/Segments.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Segments.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "subnav",
+      "type": "registry:ui",
+      "title": "Subnav",
+      "files": [
+        {
+          "path": "packages/ui/src/Subnav.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Subnav.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "files": [
+        {
+          "path": "packages/ui/src/Table.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Table.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "td",
+      "type": "registry:ui",
+      "title": "Td",
+      "files": [
+        {
+          "path": "packages/ui/src/Td.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Td.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "files": [
+        {
+          "path": "packages/ui/src/Textarea.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Textarea.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "skalahq/bold-design/field-styles"
+      ]
+    },
+    {
+      "name": "th",
+      "type": "registry:ui",
+      "title": "Th",
+      "files": [
+        {
+          "path": "packages/ui/src/Th.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Th.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "tools",
+      "type": "registry:ui",
+      "title": "Tools",
+      "files": [
+        {
+          "path": "packages/ui/src/Tools.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Tools.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "topbar",
+      "type": "registry:ui",
+      "title": "Topbar",
+      "files": [
+        {
+          "path": "packages/ui/src/Topbar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/Topbar.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "field-styles",
+      "type": "registry:ui",
+      "title": "field-styles",
+      "description": "Shared Tailwind class sets for input-like primitives (Field, Input, SearchInput, Textarea). Required by them.",
+      "files": [
+        {
+          "path": "packages/ui/src/field-styles.ts",
+          "type": "registry:ui",
+          "target": "components/ui/field-styles.ts"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "multi-input",
+      "type": "registry:ui",
+      "title": "multi-input",
+      "description": "Space-separated word slots with paste spreading, per-slot navigation and cancelable changes. Ships multi-input.ts (the ui-sdk view) and MultiInput.tsx (the React wrapper) as one unit.",
+      "files": [
+        {
+          "path": "packages/ui/src/MultiInput.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/MultiInput.tsx"
+        },
+        {
+          "path": "packages/ui/src/multi-input.ts",
+          "type": "registry:ui",
+          "target": "components/ui/multi-input.ts"
+        }
+      ],
+      "dependencies": [
+        "@ui-sdk/core",
+        "@ui-sdk/react",
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "theme",
+      "type": "registry:file",
+      "title": "theme",
+      "description": "Tailwind v4 tokens + --ui-* bridge consumed by every primitive. Import AFTER @import \"tailwindcss\";.",
+      "files": [
+        {
+          "path": "packages/ui/theme.css",
+          "type": "registry:file",
+          "target": "app/theme.css"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    }
+  ]
+}

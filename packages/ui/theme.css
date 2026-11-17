@@ -1,0 +1,155 @@
+/* Import AFTER `@import "tailwindcss";`. Requires `@ui-sdk/core/web.css` for --ui-* defaults. */
+/* Geist font faces expect @fontsource-variable/geist + @fontsource-variable/geist-mono (or replace them). */
+
+/* Unlayered so it wins over web.css's :where(:root) defaults in the components layer. */
+:root {
+  color-scheme: dark;
+  --ui-background: var(--color-canvas);
+  --ui-foreground: var(--color-paper);
+  --ui-muted: var(--color-lift);
+  --ui-muted-foreground: var(--color-ash);
+  --ui-border: var(--color-frame);
+  --ui-input: var(--color-frame);
+  --ui-primary: var(--color-action);
+  --ui-primary-foreground: var(--color-paper);
+  --ui-destructive: var(--color-danger);
+  --ui-ring: var(--color-signal);
+  --ui-ring-border: var(--color-signal);
+  --ui-overlay: rgb(0 0 0 / 0.55);
+  --ui-shadow: none;
+  --ui-font-size: 1rem;
+  --ui-font-sans: var(--font-sans);
+  --ui-font-mono: var(--font-mono);
+}
+
+@custom-variant hover-fine (@media (hover: hover) and (pointer: fine));
+
+@theme {
+  --color-canvas: #101010;
+  --color-well: #0a0a0a;
+  --color-paper: #fafafa;
+  --color-paper-press: #e7e7e7;
+  --color-ink: #0a0a0a;
+  --color-lift: #161616;
+  --color-ash: #a1a1a1;
+  --color-lede: #d4d4d4;
+  --color-mute: #262626;
+  --color-frame: #303030;
+  --color-hairline: #ffffff1a;
+  --color-action: #2466c3;
+  --color-action-hover: #2d74d0;
+  --color-signal: #5fa1f3;
+  --color-code: #6fa7ee;
+  --color-danger: #e7b1a8;
+  --font-sans: "Geist", "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", "Geist Mono Variable", ui-monospace, Menlo, monospace;
+  --breakpoint-narrow: 45rem;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@layer base {
+  @font-face {
+    font-family: "Geist";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("../node_modules/@fontsource-variable/geist/files/geist-latin-wght-normal.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Geist Mono";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("../node_modules/@fontsource-variable/geist-mono/files/geist-mono-latin-wght-normal.woff2") format("woff2");
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    color-scheme: dark;
+    accent-color: var(--color-action);
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-frame) transparent;
+    font-size: 1.25rem;
+  }
+
+  html,
+  body {
+    margin: 0;
+    min-height: 100%;
+    background: var(--color-canvas);
+    color: var(--color-paper);
+    font-family: var(--font-sans);
+    font-weight: 430;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-frame);
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+    border-radius: 0;
+  }
+
+  button {
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a {
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-signal);
+    outline-offset: 2px;
+  }
+
+  ::placeholder {
+    color: var(--color-ash);
+    opacity: 1;
+  }
+
+  ::selection {
+    background: var(--color-action);
+    color: var(--color-paper);
+  }
+
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-results-button {
+    -webkit-appearance: none;
+  }
+
+  input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    width: 0.85rem;
+    height: 0.85rem;
+    margin-left: 0.35rem;
+    cursor: pointer;
+    background: center / contain no-repeat url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><path d='M2 2l8 8M10 2L2 10' stroke='%23a1a1a1' stroke-width='1.4' stroke-linecap='square'/></svg>");
+  }
+}
